@@ -1,0 +1,48 @@
+.map {
+  &__wrapper {
+    width: 100%;
+    max-width: 1376px;
+    margin: 0 auto;
+    padding-top: 35%;
+    position: relative;
+    margin-bottom: 80px;
+    overflow: hidden;
+  }
+
+  &__google {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .adress {
+    display: flex;
+    justify-content: center;
+
+    font-weight: 600;
+    font-family: "Poppins";
+
+    &_cont {
+      line-height: normal;
+      padding-left: 5%;
+    }
+
+    &_name {
+      color: #0d70b7;
+      font-size: 14px;
+    }
+
+    &_gray {
+      font-size: 16px;
+      font-family: "Poppins";
+      color: #b7b7b7;
+    }
+    &_contact {
+      font-size: 9px;
+      font-family: "Poppins";
+      color: #b7b7b7;
+    }
+  }
+}

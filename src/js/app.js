@@ -29,4 +29,32 @@ window.onload = function() {
       clickable: true
     }
   });
+
+  var myForm = document.querySelector("form");
+
+  var videoCont = document.querySelector("[data-video]"),
+    movie = videoCont.querySelector("video"),
+    buttonPlay = videoCont.querySelector("[data-play]");
+  vidControl = document.querySelector(".button-cont");
+
+  buttonPlay.onclick = function() {
+    movie.play();
+    vidControl.setAttribute("hidden", "true");
+  };
+  movie.onclick = function() {
+    movie.pause();
+    vidControl.removeAttribute("hidden");
+  };
+  movie.onended = function() {
+    vidControl.removeAttribute("hidden");
+  };
+
+  myForm.onsubmit = function(e) {
+    e.preventDefault();
+    let humanCheck = document.getElementById("humanTest").value;
+
+    if (humanCheck != 18) {
+      alert("Jestes robotem!!!");
+    }
+  };
 };

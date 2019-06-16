@@ -1,7 +1,6 @@
 .slider {
   position: relative;
   background-color: #f8f8f8;
-  // top: 0; left: 0;
   height: 576px;
   max-width: 1376px;
   margin: 0 auto;
@@ -9,19 +8,8 @@
     width: 100%;
     height: 100%;
   }
-  //   @media (max-width: 768px) {
-  //     width: 100%;
-  //     height: 200%;
-  //   }
 }
 
-// .swiper-container {
-//   position: absolute;
-//   width: 100%;
-//   height: 100%;
-//   z-index: 120;
-//   background-color: #fff;
-// }
 .photo-container {
   position: absolute;
   width: 400px;
@@ -56,29 +44,17 @@
     left: 50%;
     transform: translateX(-50%);
   }
-
-  //   top: 50%;
-  //   left: 10%;
-  //   transform: translateY(-50%);
-  //   background-repeat: no-repeat;
 }
 .swiper-container {
   position: absolute;
   width: 100%;
   height: 100%;
-  //   z-index: 10;
-  //   background-color: #fff;
 }
 
 .photo1 {
   background-image: url("../img/Eliza.jpg");
   background-position: center;
-  //   background-size: 400px 320px;
   background-size: 100% 100%;
-
-  //   @media (max-width: 1100px) {
-  //     background-size: 320px 256px;
-  //   }
 }
 .photo2 {
   background-image: url("../img/GenghisKhan.jpg");
@@ -87,7 +63,6 @@
 }
 .text-container {
   position: absolute;
-  //   width: 550px;
   width: 37%;
   height: 220px;
   top: 50%;
@@ -112,12 +87,7 @@
     transform: translateX(-50%);
     width: 55%;
   }
-  //   @media (max-width: 768px) {
-  //     top: 100%;
-  //     right: 30%;
-  //   }
 
-  //   background-color: white;
   .specialist-text {
     font-size: 24px;
     line-height: 32px;

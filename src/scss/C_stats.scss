@@ -1,0 +1,125 @@
+div.stats {
+  font-family: "poppins", arial, sans-serif;
+  max-width: 1376px;
+
+  @media screen and (min-width: 1280px) {
+    margin: 0 auto;
+  }
+
+  .workWith {
+    border-bottom: 1px solid #b7b7b7;
+
+    .logo {
+      margin: 55px auto 48px;
+      max-width: 1120px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      img {
+        height: 68px;
+        flex-basis: 25%;
+      }
+
+      @media screen and (min-width: 768px) {
+        img {
+          flex-basis: 0;
+        }
+      }
+    }
+  }
+
+  h4 {
+    margin-top: 17px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #676767;
+  }
+}
+
+.map1 {
+  margin: 103px auto 0;
+  max-width: 1120px;
+  background-image: url("https://pixabay.com/get/55e6d144434fb14cf6d98774cf2e3e7d083edbe35357734b752d7a/world-36479.svg");
+  height: 560px;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  .txtOnMap {
+    padding-top: 89px;
+    text-align: center;
+
+    h1,
+    h3 {
+      margin: 0 auto;
+      max-width: 544px;
+    }
+
+    h1 {
+      font-size: 32px;
+      font-weight: 600;
+      line-height: 48px;
+    }
+
+    h3 {
+      margin-top: 32px;
+      color: #707070;
+      font-weight: 600;
+      line-height: 26px;
+    }
+
+    .numb {
+      font-weight: bold;
+      margin-top: 93px;
+      position: relative;
+      overflow: hidden;
+
+      p {
+        display: block;
+        font-size: 36px;
+        margin-bottom: 10px;
+
+        @media screen and (min-width: 768px) {
+          display: inline-block;
+          margin-bottom: 0px;
+        }
+      }
+
+      .purp {
+        position: relative;
+        display: inline-block;
+        font-size: 20px;
+        transform: translateY(-25%);
+        margin-bottom: 50px;
+        width: 75%;
+
+        @media screen and (min-width: 768px) {
+          margin-bottom: 0px;
+          margin-right: 90px;
+          width: inherit;
+
+          &:nth-of-type(2) {
+            margin-right: 110px;
+          }
+
+          &:nth-of-type(3) {
+            margin-right: 0px;
+          }
+        }
+
+        &:after {
+          content: "";
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          display: inline-block;
+          transform: translateY(50%);
+          background-color: rgba(122, 33, 127, 0.2);
+        }
+      }
+    }
+  }
+}

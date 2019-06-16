@@ -1,0 +1,164 @@
+// font-family: 'Poppins', sans-serif;
+// font-family: 'Roboto Slab', serif;
+
+.hero {
+  position: relative;
+  height: 768px;
+  max-width: 1376px;
+  margin: 0 auto;
+
+  background-image: url("../img/biuro.jpg");
+  background-position: center;
+  background-size: 1376px 786px;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 9;
+    opacity: 0.65;
+    background-image: linear-gradient(
+      129deg,
+      rgb(122, 33, 127) 0%,
+      rgb(118, 144, 191) 100%
+    );
+  }
+  .hero-content {
+    ul.links {
+      font-size: 10px;
+      text-decoration: none;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-end;
+      margin-right: 6%;
+      padding-top: 20px;
+      li {
+        margin-right: 3%;
+        font-family: "Mont", sans-serif;
+        font-size: 10px;
+        text-decoration: none;
+        z-index: 15;
+        a {
+          text-decoration: none;
+          color: white;
+        }
+        a:hover {
+          color: #7a217f;
+          opacity: 0.9;
+        }
+
+        a:visited {
+          opacity: 0.5;
+          text-decoration: none;
+        }
+      }
+    }
+
+    div.title {
+      position: absolute;
+      width: 250px;
+      height: 32px;
+      z-index: 10;
+      color: white;
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      font-size: 20px;
+      top: 291px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    div.text {
+      position: absolute;
+      color: white;
+      z-index: 10;
+      width: 544px;
+      height: 124px;
+      font-family: "Poppins", sans-serif;
+      font-size: 36px;
+      font-weight: 600;
+      line-height: 54px;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 359px;
+      text-align: center;
+      @media (max-width: 768px) {
+        font-size: 28px;
+      }
+      @media (max-width: 600px) {
+        font-size: 22px;
+        line-height: 38px;
+        width: 340px;
+      }
+    }
+    div.box-email {
+      position: absolute;
+      width: 416px;
+      height: 48px;
+      border: 2px solid grey;
+      border-radius: 5px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 10;
+      top: 488px;
+      background-color: transparent;
+      @media (max-width: 768px) {
+        width: 320px;
+        height: 36px;
+      }
+
+      .input-email {
+        border: none;
+        position: absolute;
+        left: 10px;
+        top: 15px;
+        width: 150px;
+        height: 19px;
+        z-index: 11px;
+        color: lightgray;
+        cursor: pointer;
+        background-color: transparent;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-size: 12px;
+        border: none;
+        &:hover {
+          border: none;
+          color: black;
+          outline: none;
+        }
+        &:focus {
+          border: none;
+          outline: none;
+        }
+      }
+
+      .btn-email {
+        position: absolute;
+        right: 10px;
+        top: 15px;
+        width: 130px;
+        height: 19px;
+        color: white;
+        z-index: 11;
+        cursor: pointer;
+        background-color: transparent;
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-size: 12px;
+        border: none;
+        &:hover {
+          color: #7a217f;
+          opacity: 0.6;
+        }
+        &:focus {
+          outline: none;
+          opacity: 0.9;
+        }
+      }
+    }
+  }
+}
